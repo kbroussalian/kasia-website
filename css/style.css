@@ -17,9 +17,9 @@ body {
 
 
 .wrapper {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
-  padding: 20px 50px 0 50px;
+  padding: 20px 25px 0 0;
 }
 
 .slate-background {
@@ -27,9 +27,48 @@ body {
   padding-top: 30px;
 }
 
-.main-image {
-  background-size: 100%;
-  padding-top: 40px;
+/*******slideshows*******/
+.portfolio {
+  display: none;
+}
+
+.portfolio.active {
+  display: block;
+}
+
+.frame, .slide {
+  width: 800px;
+  height: 600px;
+}
+
+.frame {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+.tray {
+  position: relative;
+}
+
+.slide {
+  float: left;  
+}
+
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  margin: 5px; 
+  color: black;
+  text-shadow: 2px 2px 2px white, -2px -2px 2px white;
+}
+
+.prev { left: 0; }
+.next {right: 0; }
+
+img, table, video. iframe {
+  width: 100%;
+  max-width: 100%;
 }
 /********** Nav Bar **********/
 
@@ -38,43 +77,48 @@ body {
     padding-bottom: 5px;
   }
 
-  #nav_bar nav {
+  #nav_bar nav > ul {
     display: table;
     width: 100%;
-
   }
 
-    #nav_bar nav a {
-      height: 59px;
+    #nav_bar nav > ul > li {
       display: table-cell;
       width: 15%;
       vertical-align: middle;
+      border-right: 1px solid #ccc;
+    }
+
+    #nav_bar nav > ul > li > a {
       text-transform: uppercase;
       color: black;
       text-align: center;
-      border-right: 1px solid #ccc;
       text-decoration: none;
       font: 15px 'Josefin Sans', sans-serif;
+      display: block;
+      width: 100%;
+      vertical-align: bottom;
     }
 
-    #nav_bar nav a.title {
+    #nav_bar nav > ul > li.title {
+      width: 40%;
+    }
+
+    #nav_bar nav > ul > li.title > a {
       font-family: 'Josefin Sans', sans-serif;
       font-size: 2.5em;
       padding-top: 10px;
       color: #353230;
       font-weight: 600;
-      width: 40%;
-      height: 59px;
     }
 
-
-    #nav_bar nav a.selected {
+    #nav_bar nav > ul > li > a.selected {
       background: grey;
       color: white;
     }
 
-    #nav_bar nav a:hover {
-      color:white;
+    #nav_bar nav > ul > li:hover{
+      color: white;
       /* gradient */
       background: rgb(0,0,0); /* Old browsers */
       background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(71,71,71,1) 28%, rgba(81,81,81,1) 35%, rgba(71,71,71,1) 72%, rgba(43,43,43,1) 87%, rgba(28,28,28,1) 91%, rgba(0,0,0,1) 100%); /* FF3.6+ */
@@ -85,18 +129,78 @@ body {
       background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(71,71,71,1) 28%,rgba(81,81,81,1) 35%,rgba(71,71,71,1) 72%,rgba(43,43,43,1) 87%,rgba(28,28,28,1) 91%,rgba(0,0,0,1) 100%); /* W3C */
     }
 
+    #nav_bar nav > ul > li > a:hover {
+      color: white;
+    }
+
 /********** Social Bar ******/
-#social {
+#social a {
+  float:right;
+  display:block;
+  width: 40px;
+  height: 40px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+ a.twit, a.insta {
+  background: url(../images/social/social-icons.png) no-repeat;
+}
+
+
+a.twit { background-position: 0 -40px; }
+a.twit:hover { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.insta { background-position: 0 -200px; }
+a.insta:hover { background-position: -40px -200px; }
+a.insta:active { background-position: -80px -200px; }
+
+/*********** Drop Menus **********/
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*nav {background:#FFF;float:left;}
+nav ul {text-align:center;}*/
+/*nav ul li {float:left;display:inline;}*/
+/*nav ul li:hover {background:#E6E6E6;}*/
+/*nav ul li a {display:block;padding:15px 25px;color:#444;}*/
+
+nav ul li ul {position:absolute;z-index:10;}
+
+nav ul li ul li:first-child {margin-top: 16px;}
+
+nav ul li ul li {
+  width:110px;
+  background:#FFF;
+  width:140px;
+}
+nav ul li ul li a {
+  display:block;
+  padding:15px 10px;
+  color:#444;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+nav ul li ul li:hover a {background:#F7F7F7;}
+nav ul li ul.fallback {display:none;}
+nav ul li:hover ul.fallback {display:block;}
+
+/******Footer********/
+
+.footer {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
   float: right;
-  
+  background-color: white;
+  margin-bottom: 30px;
+
+
+
+
 }
-
-a.twit {
-  background: url(../images/social/twitter.png) no-repeat;
-
-}
- a.insta {
-  background: url(../images/social/instagram.png) no-repeat;
-
- }
-
