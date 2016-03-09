@@ -5,70 +5,96 @@
   box-sizing: border-box;
 }
 
-/* scale all images, and media to accomodate responsive layout. */
-img, video, audio, iframe, table, form { 
-  width:100%; /* IE */
-  max-width: 100%; /* FF, Safari, Chrome */
-}
-
 body {
   font-size: 88%;
 }
 
 
 .wrapper {
-  width: 80%;
+  width: 88%;
   margin: 0 auto;
+  padding: 0;
+}
+
+#nav_bar.wrapper {
   padding: 20px 25px 0 0;
 }
 
 .slate-background {
   background: #555;
-  padding-top: 30px;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 /*******slideshows*******/
 .portfolio {
   display: none;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
 }
 
 .portfolio.active {
   display: block;
 }
 
-.frame, .slide {
-  width: 800px;
-  height: 600px;
-}
-
-.frame {
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-}
-
-.tray {
-  position: relative;
+.portfolio a {
+  position: absolute;
+  top: 49%;
+  z-index: 10;
 }
 
 .slide {
-  float: left;  
-}
-
-.prev, .next {
-  position: absolute;
-  top: 40%;
-  margin: 5px; 
-  color: black;
-  text-shadow: 2px 2px 2px white, -2px -2px 2px white;
-}
-
-.prev { left: 0; }
-.next {right: 0; }
-
-img, table, video. iframe {
   width: 100%;
-  max-width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; 
+}
+
+.slide img {
+  width: 850px;
+  height: auto;
+}   
+
+.slide.active {
+  z-index: 1;
+}
+
+.portfolio a {
+  position: absolute;
+  top: 49%;
+  z-index: 10;
+}
+
+.portfolio a.prev {
+  color: #D3D3D3;
+  left: 5px; 
+}
+
+.portfolio a.next {
+  color: #D3D3D3;
+  right: 5px; 
+}
+
+#portfolios {
+    position: relative;
+    top: -52px;
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+}
+
+
+
+/* set the max-width size of this media query to 10px higher than the width of your widest image. */
+@media only screen and (max-width: 1060px) {
+  .slide img {
+    width: 100%;
+    max-width: 100%;
+  } 
 }
 /********** Nav Bar **********/
 
@@ -199,8 +225,6 @@ nav ul li:hover ul.fallback {display:block;}
   float: right;
   background-color: white;
   margin-bottom: 30px;
-
-
-
-
+  margin-top: 20px;
+  margin-right: 55px;
 }

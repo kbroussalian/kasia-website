@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
     <!-- link to custom stylesheets -->
    <link rel="stylesheet" href="css/style.css">
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +18,7 @@
     
     <span id="social">
       <a class="twit" href="https://twitter.com/kbroussalian" target="_blank" title="Twitter">Twitter</a>
-      <a class="insta" href="d" title="Instagram">Instagram</a>
+      <a class="insta" href="https://www.instagram.com/kbroussalian/" target="_blank" title="Instagram">Instagram</a>
     </span>
 
   
@@ -34,10 +33,10 @@
         <li class="title"><a href="index.html">Kasia Broussalian</a></li>
         <li><a href="portfolios.html">Portfolios</a>
           <ul class="fallback">
-            <li><a href="#singles">Singles</a></li>
-            <li><a href="#colorado">Life Along the Colorado</a></li>
-            <li><a href="#yampa">The Yampa Ranch</a></li>
-            <li><a href="#cloistered">Cloistered</a></li>
+            <li><a href="#portfolios" data-target="#p1">Singles</a></li>
+            <li><a href="#portfolios" data-target="#p2">Life Along the Colorado</a></li>
+            <li><a href="#portfolios" data-target="#p3">The Yampa Ranch</a></li>
+            <li><a href="#portfolios" data-target="#p4">Cloistered</a></li>
           </ul>
         </li>
         <li><a href="multimedia.html">Multimedia</a></li>
@@ -48,23 +47,25 @@
   </div>
 
   <!--///////Singles Slideshow//////-->
+
+
     
  <div class="wrapper slate-background">
-   
-  <div class="frame portfolio active" id="singles">
-    <div class="tray">
+  
+  <span id="portfolios"></span>
 
-      <div class="slide">
+  <div class="portfolio active" id="p1">
+      <div class="slide active">
         <img src="images/singles/Singles_01.jpg">
       </div>
 
       <div class="slide">
         <img src="images/singles/Singles_02.jpg"> 
-      </div>
+     </div>
 
       <div class="slide">
         <img src="images/singles/Singles_03.jpg">  
-      </div>
+     </div>
 
       <div class="slide">
         <img src="images/singles/Singles_04.jpg">
@@ -142,113 +143,12 @@
         <img src="images/singles/Singles_22.jpg">
       </div> 
 
+      <a class="prev" href="#portfolio1"><i class="fa fa-chevron-left fa-2x"></i></a>
+      <a class="next" href="#portfolio1"><i class="fa fa-chevron-right fa-2x"></i></a>
     </div>
 
-    <!-- controls -->
-    <a class="prev" href="#singles"><i class="fa fa-chevron-left fa-2x"></i></a>
-    <a class="next" href="#singles"><i class="fa fa-chevron-right fa-2x"></i></a>
 
   </div>
-
-  <div class="frame portfolio" id="colorado">
-    <div class="tray">
-
-      <div class="slide">
-        <img src="images/singles/Singles_01.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_02.jpg"> 
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_03.jpg">  
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_04.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_05.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_06.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_07.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_08.jpg">
-      </div>
-
-      <div class="slide">
-        <img src="images/singles/Singles_09.jpg">
-      </div>
-
-       <div class="slide">
-        <img src="images/singles/Singles_10.jpg">
-      </div>
-
-       <div class="slide">
-        <img src="images/singles/Singles_11.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_12.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_13.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_14.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_15.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_16.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_17.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_18.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_19.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_20.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_21.jpg">
-      </div> 
-
-      <div class="slide">
-        <img src="images/singles/Singles_22.jpg">
-      </div> 
-
-    </div>
-
-    <!-- controls -->
-    <a class="prev" href="#colorado"><i class="fa fa-chevron-left fa-2x"></i></a>
-    <a class="next" href="#colorado"><i class="fa fa-chevron-right fa-2x"></i></a>
-
-  </div>
-
 
   <div>
     <footer class="footer">
@@ -258,5 +158,6 @@
 
  <script src="https://code.jquery.com/jquery-1.12.0.min.js"> </script>
   <script src="js/homepage.js"> </script> 
+
 </body>
 </html> 
