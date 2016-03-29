@@ -26,6 +26,7 @@ body {
   margin: 0 auto;
   padding: 25px;
   background: #555;
+  box-shadow: 0 3px 5px #ccc;
 }
 
 /*******slideshows*******/
@@ -259,3 +260,29 @@ nav ul li:hover ul.fallback {display:block;}
   margin-top: 20px;
   margin-right: 55px;
 }
+
+/******ABOUT STYLE ******/
+
+.about_header {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 40%;
+  float: right;
+  margin-top: 15px;
+  margin-right: 150px;
+}
+
+.about_intro {
+  font-size: 1.25em;
+
+}
+.about_photo {
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px #ccc 
+}
+
+.border {
+box-shadow: 0 3px 5px #ccc;
+}
+
