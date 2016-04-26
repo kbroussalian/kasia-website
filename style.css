@@ -128,29 +128,8 @@ body {
     }    
 }
 
-@media only screen and (max-width: 1100px) { 
-     .about_photo {
-      width: 35%;
-    }    
-}
 
-@media only screen and (max-width: 1040px) { 
-     .about_photo {
-      width: 30%;
-    }    
-}
 
-@media only screen and (max-width: 1030px) { 
-     .about_header {
-      font-size: 80%;
-    }    
-}
-
-@media only screen and (max-width: 876px) { 
-     .about_header {
-      font-size: 70%;
-    }    
-}
 
 /********** Nav Bar **********/
 
@@ -308,25 +287,5 @@ nav ul li:hover ul.fallback {display:block;}
 
 .border {
 box-shadow: 0 3px 5px #ccc;
-}
-
-/******MULTIMEDIA STYLE ******/
-
-.multimedia_info {
-  font-family: 'Josefin Sans', sans-serif;
-  width: 40%;
-  float: right;
-  margin-top: 15px;
-  margin-right: 150px;
-}
-
-/******WRITING STYLE ******/
-
-.writing_info {
-  font-family: 'Josefin Sans', sans-serif;
-  width: 40%;
-  float: right;
-  margin-top: 15px;
-  margin-right: 150px;
 }
 
